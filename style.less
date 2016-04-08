@@ -1,3 +1,7 @@
+*{
+   padding: 0;
+   margin: 0;
+}
 body{
   font: 1em/1.6em "Roboto", Arial, Tahoma, sans-serif;
   color: #353535;
@@ -14,13 +18,14 @@ body{
    }
    &--blackfon{
       background: url(images/blackfon.png);
+
    }
    &__name, &__disc,&__taymer-p{
    text-align: center;
    text-transform: uppercase;
    font-weight: 300;
    }
-   &__name, &__disc,{
+   &__name, &__disc{
    text-shadow: 1px 1px 3px #222;
    margin: 40px 0;
    }
@@ -32,6 +37,7 @@ body{
       font-size: 90px;
       line-height: 90px;
       margin-bottom: 200px;
+      padding: 0 140px 0 0;
    }
    &__disc{
       font-size: 48px;
@@ -40,6 +46,7 @@ body{
    }
     &--crownfon{
       background: url(images/crownfon.png);
+      
    }
    &__sub-counter{
       float: right;
@@ -108,6 +115,7 @@ body{
    &__box-img{
    width: 100%;
    height: auto;
+   margin-top: -240px;
    }
    &__box{
       width: 50%
@@ -117,12 +125,74 @@ body{
    }
    &__taymer{
       text-align: center;
+      margin-bottom: 53px;
    }
    &__taymer-p{
       font-size: 22px;
       margin: 40px 0;
    }
 }
+.content{
+   background: url(images/grayfon.png);
+   &__zag{
+      background: #ffcc00;
+      margin-bottom: 80px;
+   }
+   &__p{
+      color: #111;
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-weight: 300;
+      padding: 30px 0;
+      text-transform: uppercase;
+   }
+   &__anons{
+      width: 48%;
+      height: 230px;
+      overflow: hidden;
+      margin-bottom: 15px;
+   }
+ 
+&__anons-number{
+   float: left;
+    border: 1px solid #bbb;
+    width: 80px;
+    text-align: center;
+    height: 230px;
+    padding: 0 9px;
+}
+&__anons-num{
+   background: #ffc000;
+    border-radius: 50%;
+    margin-top: 77px;
+    height: 75px;
+    line-height: 75px;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 1px -1px;
+    font-size: 44px;
+    color: #111;
+   font-family: 'Roboto', sans-serif;
+}
+  &__anons-fon{
+      background: #fff;
+   }
+    &__anons-hover{
+      margin-top: 120px;
+      height: 230px;
+      &:hover{
+         margin-top: -100px;
+         transition: 0.5s;
+         -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+
+      }
+   }
+
+}
+ 
+  
 
 
 
@@ -131,9 +201,17 @@ body{
 
 
 
+.clearfix:before, .clearfix:after{
+   content: "";
+   display: table;
+}
+.clearfix:after{
+   clear: both;
+}
 
-.clearfix:before{
+
+/*.clearfix:before{
    content: "";
    display: block;
    clear: both;
-}
+}*/
