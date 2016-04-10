@@ -11,6 +11,11 @@ body{
   max-width: 1000px;
    margin: 0 auto;
 }
+   .header__name, .header__disc,.content__anons-h1{
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 300;
+   }
 .header{
 
    &__top{
@@ -20,11 +25,7 @@ body{
       background: url(images/blackfon.png);
 
    }
-   &__name, &__disc,&__taymer-p{
-   text-align: center;
-   text-transform: uppercase;
-   font-weight: 300;
-   }
+
    &__name, &__disc{
    text-shadow: 1px 1px 3px #222;
    margin: 40px 0;
@@ -130,6 +131,7 @@ body{
    &__taymer-p{
       font-size: 22px;
       margin: 40px 0;
+      text-transform: uppercase;
    }
 }
 .content{
@@ -148,49 +150,138 @@ body{
       text-transform: uppercase;
    }
    &__anons{
-      width: 48%;
-      height: 230px;
-      overflow: hidden;
-      margin-bottom: 15px;
+      width: 48%; 
    }
- 
-&__anons-number{
-   float: left;
-    border: 1px solid #bbb;
-    width: 80px;
-    text-align: center;
-    height: 230px;
-    padding: 0 9px;
-}
-&__anons-num{
+   &__anons-fon{
+      background: #fff;
+      border: 1px solid #bbb;
+      height: 228px;
+      overflow: hidden;
+
+   }
+   &__anons-number{
+   width: 20%;
+       height: 100%;
+    padding-left: -3px;
+    
+    background-color: white;
+ }
+ &__anons-num-border{
+   border-right: 1px solid #bbb;
+   height: 227px;
+   padding-top: 1px;
+ }
+ &__anons-num{
    background: #ffc000;
     border-radius: 50%;
-    margin-top: 77px;
-    height: 75px;
-    line-height: 75px;
-    border: 1px solid #fff;
-    box-shadow: 1px 1px 1px -1px;
+    margin: 82px auto 0;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 3px #bbb;
     font-size: 44px;
-    color: #111;
-   font-family: 'Roboto', sans-serif;
-}
-  &__anons-fon{
-      background: #fff;
-   }
-    &__anons-hover{
-      margin-top: 120px;
-      height: 230px;
-      &:hover{
-         margin-top: -100px;
-         transition: 0.5s;
-         -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
+    line-height: 60px;
 
-      }
-   }
+
 
 }
+   &__anons-content{
+   width: 80%;
+   position: relative;
+ }
+ &__anons-text{
+   padding: 40px 40px 0 40px;
+ }
+
+ &__anons-h1{
+      text-align: left;
+      font-size: 30px;
+      margin-bottom: 20px;
+      line-height: 30px;
+      font-weight: 400;
+
+ }
+ &__anons-p{
+      font-size: 18px;
+      font-weight: 400;
+      color: #333;
+   }
+   &__anons-img{
+      position: absolute;
+      top: 220px;
+   }
+   &__anons-hover{
+      vertical-align: middle;
+      width: 100%;
+      height: auto;
+   }
+
+ &__footer-grapha{
+      font-size: 30px;
+      line-height: 40px;
+      font-weight: normal;
+      color: #111;
+      text-transform: uppercase;
+      text-align: center;
+   }
+   &--footer-orange{
+      color: #ff8a00;
+   }
+}
+
+
+
+
+
+
+
+/*Общие стили*/
+.left{
+   float: left;
+}
+.right{
+   float: right;
+}
+
+
+
+
+
+
+/*
+&__anons-right{
+   
+   padding: 39px 20px 0 19px;
+   width: 360px;
+}*/
+
+  
+    /* font-size: 30px;
+      color: #111;
+      
+      text-transform: uppercase;*/
+  
+  /* 
+   }
+   &__anons-hover{
+   margin-top: -120px;
+   }
+   &__footer{
+      padding: 0 0 80px 0;
+      text-align: center;
+   }
+   &__footer-grapha{
+      font-size: 30px;
+      font-weight: normal;
+      color: #111;
+      text-transform: uppercase;
+   }
+   &--footer-orange{
+      color: #ff8a00;
+   }*/
+
+
  
   
 
@@ -214,4 +305,6 @@ body{
    content: "";
    display: block;
    clear: both;
-}*/
+}*/   /*   -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);*/
