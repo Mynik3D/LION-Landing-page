@@ -150,8 +150,14 @@ body{
       text-transform: uppercase;
    }
    &__anons{
-      width: 48%; 
+      width: 49%;
+      margin-bottom: 80px; 
    }
+   &__anons:nth-child(even) {float: right;}
+   &__anons:nth-child(odd) {float: left;}
+   &__anons:hover{
+   transform: rotate(360deg);
+}
    &__anons-fon{
       background: #fff;
       border: 1px solid #bbb;
@@ -160,8 +166,8 @@ body{
 
    }
    &__anons-number{
-   width: 20%;
-       height: 100%;
+    width: 20%;
+    height: 100%;
     padding-left: -3px;
     
     background-color: white;
@@ -182,10 +188,19 @@ body{
     box-shadow: 1px 1px 3px #bbb;
     font-size: 44px;
     line-height: 60px;
-
-
+    transition: 0.5s;
+}
+/*HOVER*/
+&__anons:hover .content__anons-num{
+   transform: rotate(360deg);
+}
+&__anons:hover .content__anons-img{
+   top: 0;
+   opacity: 0.9;
 
 }
+
+
    &__anons-content{
    width: 80%;
    position: relative;
@@ -210,12 +225,18 @@ body{
    &__anons-img{
       position: absolute;
       top: 220px;
+      transition: 0.5s;
+
    }
    &__anons-hover{
       vertical-align: middle;
       width: 100%;
       height: auto;
    }
+ /*   &__anons-hover:hover{
+   margin-top: -224px;
+   transition: 0.5s;
+   }*/
 
  &__footer-grapha{
       font-size: 30px;
@@ -224,6 +245,7 @@ body{
       color: #111;
       text-transform: uppercase;
       text-align: center;
+      margin: 0 0 80px 0;
    }
    &--footer-orange{
       color: #ff8a00;
