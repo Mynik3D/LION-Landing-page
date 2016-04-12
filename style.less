@@ -255,19 +255,54 @@ body{
    /*Контент с системой*/
    &__system{
        background: url(images/blackfon.png);
+     
+   }
+   &__box{
+      width: 460px;
+      margin-top: 38px;
+   }
+   &__box-img{
+   width: 100%;
+   height: auto;
+   }
+    
+   &__sub-counter{
+      width: 540px;
+      float: right;
+     text-align: center;
+      margin: 80px 0 80px 0;
    }
    &__sub-zag{
       color: #fff;
       font-size: 30px;
       font-weight: 400;
       text-transform: uppercase;
+      margin-bottom: 28px;
+      text-shadow: 1px 1px 3px #222;
    }
    &--sub-zag-orange{
       color: #ffc000
    }
    &__sub-submit{
       padding: 15px 0;
+      width: 380px;
+      font-size: 30px;
+      color: #111;
+     text-transform: uppercase;
+     margin: 0 0 27px 0;
+     transition: 0.5s;
+     border: none;
+     &:hover{
+      background: #ffc000;
+     }
    }
+   &__taymer-p{
+      font-size: 22px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0 0 32px 0;
+   }
+
 }
 
 
@@ -309,6 +344,9 @@ body{
 }
 .right{
    float: right;
+}
+.white{
+   color: #fff;
 }
 
 
