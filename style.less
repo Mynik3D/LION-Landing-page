@@ -134,13 +134,18 @@ body{
       text-transform: uppercase;
    }
 }
+ .crownfon{
+       background: url(images/grayfon.png);
+   }
+   
 .content{
-   background: url(images/grayfon.png);
+  
    padding: 0 0 80px 0;
    &__zag{
       background: #ffcc00;
       margin: 0 0 80px 0;
    }
+  
    &__p{
       color: #111;
       font-size: 40px;
@@ -192,6 +197,17 @@ body{
     line-height: 60px;
     transition: 0.5s;
 }
+&--crownfon2{
+       background: url(images/crownfon.png);
+       padding: 0 0 80px 0;
+   }
+&__anons-pic{
+   margin: 82px auto 0;
+   text-align: center;
+}
+
+
+
 /*HOVER*/
 &__anons:hover .content__anons-num{
    transform: rotate(360deg);
@@ -305,7 +321,31 @@ body{
 
 }
 
+/*footer*/
+.footer{
+    background: url(images/crownfon.png);
+    
+    &__top{
+      padding: 80px 0 80px 0;
+    }
+    &__podpis{
+      border: 1px solid #bbb;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      text-align: center;
+      display: inline-block;
+     /* margin: 0 25px 0 0;
+      &:last-child{margin-right: 0 0 0 0;}*/
 
+    }
+    &__border2{
+
+    }
+    &__design{
+      padding: 18px 0;
+    }
+}
 
 
 
