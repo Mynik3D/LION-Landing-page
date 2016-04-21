@@ -11,13 +11,15 @@ body{
   max-width: 1000px;
    margin: 0 auto;
 }
-   .header__name, .header__disc,.content__anons-h1{
+/***********Похожие стили***********/
+   .header__name, .header__disc,.content__anons-h1,.content__p{
    text-align: center;
    text-transform: uppercase;
    font-weight: 300;
    }
+   /***********Начало шапки***********/
 .header{
-
+/***********Верхняя часть шапки***********/
    &__top{
       padding: 1px 0;
    }
@@ -45,10 +47,14 @@ body{
       line-height: 48px;
       color: #fff;
    }
+                       /***********Верхняя часть шапки***********/
+
+   /***********Нижняя часть шапки***********/
     &--crownfon{
       background: url(images/crownfon.png);
       
    }
+   /***********Форма подписки шапки***********/
    &__sub-counter{
       float: right;
       width: 48%;
@@ -113,6 +119,8 @@ body{
    &__border{
       border: 6px solid #fff;
    }
+                         /***********Форма подписки шапки***********/
+   /***********Картинка***********/
    &__box-img{
    width: 100%;
    height: auto;
@@ -121,9 +129,9 @@ body{
    &__box{
       width: 50%
    }
-   &__left{
-      float: left;
-   }
+                       /***********Картинка***********/
+
+  /***********Таймер в шапке***********/
    &__taymer{
       text-align: center;
       margin-bottom: 53px;
@@ -133,32 +141,32 @@ body{
       margin: 40px 0;
       text-transform: uppercase;
    }
+                   /***********Таймер в шапке***********/
+
+         /***********Нижняя часть шапки***********/
 }
- .crownfon{
-       background: url(images/grayfon.png);
-   }
-   
+ 
+   /***********Контент***********/
 .content{
-  
    padding: 0 0 80px 0;
+
    &__zag{
       background: #ffcc00;
       margin: 0 0 80px 0;
    }
-  
+  &__crownfon{
+       background: url(images/grayfon.png);
+   }
    &__p{
       color: #111;
       font-size: 40px;
       line-height: 40px;
-      text-align: center;
-      font-weight: 300;
       padding: 30px 0;
-      text-transform: uppercase;
+      
    }
    &__anons{
       width: 49%;
-      margin-bottom: 80px;
-      
+      margin-bottom: 80px;  
    }
    &__anons:nth-child(even) {float: right;}
    &__anons:nth-child(odd) {float: left;}
@@ -170,13 +178,11 @@ body{
       border: 1px solid #bbb;
       height: 228px;
       overflow: hidden;
-
    }
    &__anons-number{
     width: 20%;
     height: 100%;
     padding-left: -3px;
-    
     background-color: white;
  }
  &__anons-num-border{
@@ -206,18 +212,15 @@ body{
    text-align: center;
 }
 
-
-
-/*HOVER*/
+/***********HOVER***********/
 &__anons:hover .content__anons-num{
    transform: rotate(360deg);
 }
 &__anons:hover .content__anons-img{
    top: 0;
    opacity: 0.9;
-
 }
-
+              /***********HOVER***********/
 
    &__anons-content{
    width: 80%;
@@ -251,12 +254,9 @@ body{
       width: 100%;
       height: auto;
    }
- /*   &__anons-hover:hover{
-   margin-top: -224px;
-   transition: 0.5s;
-   }*/
+ 
 
- &__footer-grapha{
+ &__zak{
       font-size: 30px;
       line-height: 40px;
       font-weight: normal;
@@ -265,14 +265,17 @@ body{
       text-align: center;
       
    }
-   &--footer-orange{
+   &--zak-orange{
       color: #ff8a00;
    }
-   /*Контент с системой*/
+                       /***********Контент***********/
+
+   /***********Контент с системой***********/
    &__system{
        background: url(images/blackfon.png);
      
    }
+ /***********Картинка с системой***********/
    &__box{
       width: 460px;
       margin-top: 38px;
@@ -281,11 +284,13 @@ body{
    width: 100%;
    height: auto;
    }
-    
+                          /***********Картинка с системой***********/
+
+   /***********Форма подписки в системе***********/
    &__sub-counter{
       width: 540px;
       float: right;
-     text-align: center;
+      text-align: center;
       margin: 80px 0 80px 0;
    }
    &__sub-zag{
@@ -304,21 +309,25 @@ body{
       width: 380px;
       font-size: 30px;
       color: #111;
-     text-transform: uppercase;
-     margin: 0 0 27px 0;
-     transition: 0.5s;
-     border: none;
-     &:hover{
+      text-transform: uppercase;
+      margin: 0 0 27px 0;
+      transition: 0.5s;
+      border: none;
+      &:hover{
       background: #ffc000;
      }
    }
+                           /***********Форма подписки в системе***********/
+
+/***********Таймер системы***********/
    &__taymer-p{
       font-size: 22px;
       color: #fff;
       text-transform: uppercase;
       margin: 0 0 32px 0;
    }
-
+                       /***********Таймер системы***********/
+               /***********Контент с системой***********/
 }
 
 /*footer*/
@@ -328,6 +337,10 @@ body{
     &__top{
       padding: 80px 0 80px 0;
     }
+    &__zag{
+      background: #ffcc00;
+      margin-bottom: 40px;
+    }
     &__podpis{
       border: 1px solid #bbb;
       width: 180px;
@@ -335,48 +348,102 @@ body{
       border-radius: 50%;
       text-align: center;
       display: inline-block;
-     /* margin: 0 25px 0 0;
-      &:last-child{margin-right: 0 0 0 0;}*/
-
-    }
-    &__border2{
 
     }
     &__design{
       padding: 18px 0;
     }
+                           /**********Форма подписки в подвале**********/
+    &__sub-counter{
+       float: right;
+      width: 48%;
+    }
+    &__sub-form{
+      padding: 31px 25px 35px 25px;
+      background: #ffcc00;
+      text-align: center;
+   }
+   &__sub-zag{
+      font-size: 30px;
+      font-family: 'Roboto', sans-serif;
+      color: #111;
+      font-weight: lighter;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+   }
+   &__sub-mail,&__sub-submit{
+      width: 100%;
+      padding: 15px 0;
+      font-weight: 300;
+      transition: .5s;
+   }
+   &__sub-mail{
+      font-size: 20px;
+      outline: none;
+      line-height: 20px;
+      text-indent: 20px;
+      border: 1px solid #c7b900;
+   }
+
+   &__sub-mail:focus{
+      border: 1px solid transparent;
+      box-shadow: 0 0 7px #886600;
 }
+   &__sub-p{
+      font-size: 20px;
+      color: #111;
+      font-weight: 300;
 
+   }
+   &__sub-submit{
+      font-size: 30px;
+      color: #fff;
+      background: #b50000;
+      text-transform: uppercase;
+      border: none;
+      line-height: 30px;
+      text-shadow: 1px 1px 3px #700000;
+      box-shadow: 1px 1px 3px #bb8800;
+   }
+   &__sub-submit:hover{
+   background: #00778d;
+   text-shadow: 1px 1px 3px #005b6c;
+   box-shadow: 0px 0px 3px #9f7300;
+}
+&__sub-form{
+   border: 5px solid rgba(255, 255, 255, 0.6);
+   box-shadow: 1px 1px 3px #222;
+  
+}
+ &__border{
+  border: 6px solid #fff;
+}
+                             /*Форма подписки в подвале*/
 
+/*Картинка*/
+   &__box-img{
+   width: 100%;
+   height: auto;
+  
+   }
+   &__box{
+      width: 30%
+   }
+   /*Картинка*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Таймер в подвале*/
+   &__taymer{
+      text-align: center;
+      margin-bottom: 53px;
+   }
+   &__taymer-p{
+      font-size: 22px;
+      margin: 40px 0;
+      text-transform: uppercase;
+   }
+   /*Таймер в подвале*/
+     
+}
 
 /*Общие стили*/
 .left{
@@ -389,54 +456,7 @@ body{
    color: #fff;
 }
 
-
-
-
-
-
-/*
-&__anons-right{
-   
-   padding: 39px 20px 0 19px;
-   width: 360px;
-}*/
-
-  
-    /* font-size: 30px;
-      color: #111;
-      
-      text-transform: uppercase;*/
-  
-  /* 
-   }
-   &__anons-hover{
-   margin-top: -120px;
-   }
-   &__footer{
-      padding: 0 0 80px 0;
-      text-align: center;
-   }
-   &__footer-grapha{
-      font-size: 30px;
-      font-weight: normal;
-      color: #111;
-      text-transform: uppercase;
-   }
-   &--footer-orange{
-      color: #ff8a00;
-   }*/
-
-
- 
-  
-
-
-
-
-
-
-
-
+/*Очистка обтекания*/
 .clearfix:before, .clearfix:after{
    content: "";
    display: table;
@@ -444,12 +464,3 @@ body{
 .clearfix:after{
    clear: both;
 }
-
-
-/*.clearfix:before{
-   content: "";
-   display: block;
-   clear: both;
-}*/   /*   -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);*/
