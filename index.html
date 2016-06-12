@@ -6,6 +6,21 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" href="countdown/jquery.countdown.css">
+	<script>
+	 function valid (form){
+	var fail = false;
+	var email = form.email.value;
+	if (name == "" || name == " ") 
+	fail = "Вы не ввели ничего";
+if (fail) {
+	alert(fail);
+	return false;
+	}
+	else{
+		return true;
+	}
+}
+	</script>
 </head>
 <body>
 		<div class="main">
@@ -21,11 +36,12 @@
 				<div class="header__bottom header--crownfon"><!--*************** Нижная часть шапки ***************-->
 					<div class="container clearfix">
 					   <div class="header__sub-counter"><!--*************** Форма с таймером ***************-->
-					 <form action="#" class="header__sub-form header__border">
+					 <form action="" method="post" name="kurs" id="form" class="header__sub-form header__border">
 		                 <div class="header__sub-zag">Пройти обучение:</div>
-		                 <div class="input"><input type="mail" class="header__sub-mail" placeholder="Введите свой e-mail..."></input></div>
+		                 <div class="input"><input type="text" name="email" id="email" class="header__sub-mail" placeholder="Введите свой e-mail..."></input></div>
 		                 <p class="header__sub-p">и нажмите на кнопку ниже</p>
-		                 <div><input type="submit" class="header__sub-submit" value="Забрать систему"></input>
+		                 <div><input type="submit"  onclick="valid(document.getElementById('form'))" class="header__sub-submit" value="Забрать систему"></input>
+		                 <!-- <input type="button" onclick="valid(document.getElementById('form'))" name="submit" value="готово"></input> -->
 	                     </div>
 	                 </form>
 	                 	 <div class="header__taymer"><!--*************** Таймер ***************-->
